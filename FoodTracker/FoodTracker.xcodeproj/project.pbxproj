@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AEC9278220607E7D0034C211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC9278120607E7D0034C211 /* AppDelegate.swift */; };
-		AEC9278420607E7D0034C211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC9278320607E7D0034C211 /* ViewController.swift */; };
+		AEC9278420607E7D0034C211 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC9278320607E7D0034C211 /* MealViewController.swift */; };
 		AEC9278720607E7D0034C211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC9278520607E7D0034C211 /* Main.storyboard */; };
 		AEC9278920607E7D0034C211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC9278820607E7D0034C211 /* Assets.xcassets */; };
 		AEC9278C20607E7D0034C211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC9278A20607E7D0034C211 /* LaunchScreen.storyboard */; };
 		AEC9279720607E7D0034C211 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC9279620607E7D0034C211 /* FoodTrackerTests.swift */; };
 		AEE60E7A2065966600DA1E01 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE60E792065966600DA1E01 /* RatingControl.swift */; };
+		AEE60E7C206671A500DA1E01 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE60E7B206671A500DA1E01 /* Meal.swift */; };
+		AEE60E7E2068492A00DA1E01 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE60E7D2068492A00DA1E01 /* MealTableViewCell.swift */; };
+		AEE60E80206865B900DA1E01 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE60E7F206865B900DA1E01 /* MealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +32,7 @@
 /* Begin PBXFileReference section */
 		AEC9277E20607E7D0034C211 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC9278120607E7D0034C211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AEC9278320607E7D0034C211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEC9278320607E7D0034C211 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		AEC9278620607E7D0034C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEC9278820607E7D0034C211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC9278B20607E7D0034C211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,9 @@
 		AEC9279620607E7D0034C211 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
 		AEC9279820607E7D0034C211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEE60E792065966600DA1E01 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		AEE60E7B206671A500DA1E01 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		AEE60E7D2068492A00DA1E01 /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		AEE60E7F206865B900DA1E01 /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				AEC9278120607E7D0034C211 /* AppDelegate.swift */,
-				AEC9278320607E7D0034C211 /* ViewController.swift */,
+				AEC9278320607E7D0034C211 /* MealViewController.swift */,
 				AEE60E792065966600DA1E01 /* RatingControl.swift */,
+				AEE60E7B206671A500DA1E01 /* Meal.swift */,
 				AEC9278520607E7D0034C211 /* Main.storyboard */,
+				AEE60E7F206865B900DA1E01 /* MealTableViewController.swift */,
+				AEE60E7D2068492A00DA1E01 /* MealTableViewCell.swift */,
 				AEC9278820607E7D0034C211 /* Assets.xcassets */,
 				AEC9278A20607E7D0034C211 /* LaunchScreen.storyboard */,
 				AEC9278D20607E7D0034C211 /* Info.plist */,
@@ -202,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC9278420607E7D0034C211 /* ViewController.swift in Sources */,
+				AEE60E7C206671A500DA1E01 /* Meal.swift in Sources */,
+				AEC9278420607E7D0034C211 /* MealViewController.swift in Sources */,
 				AEE60E7A2065966600DA1E01 /* RatingControl.swift in Sources */,
 				AEC9278220607E7D0034C211 /* AppDelegate.swift in Sources */,
+				AEE60E80206865B900DA1E01 /* MealTableViewController.swift in Sources */,
+				AEE60E7E2068492A00DA1E01 /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
